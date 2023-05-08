@@ -3,10 +3,12 @@ from django.urls import include, path
 
 from rest_framework.routers import DefaultRouter
 
-from livraria_marcus.views import CategoriaViewSet
+from livraria_marcus.views import CategoriaViewSet, EditoraViewSet, AutorViewSet
 
 router = DefaultRouter()
 router.register(r"categorias", CategoriaViewSet)
+router.register(r"editoras", EditoraViewSet)
+router.register(r"autores", AutorViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
