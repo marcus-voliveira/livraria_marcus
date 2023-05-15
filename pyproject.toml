@@ -13,3 +13,8 @@ dependencies = [
 ]
 requires-python = ">=3.10"
 license = {text = "Marcus Oliveira"}
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
